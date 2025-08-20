@@ -1,0 +1,7006 @@
+{
+	"devices": {
+		"driverId": 4,
+		"outputPortSerialNr": "XTouch [hw:3,0,0]-ALSA (http://www.alsa-project.org)-6.16.1-zen1-1-zen-0",
+		"name": "Device-2",
+		"cm": {
+			"chOffset": 0,
+			"lSg": -1,
+			"SoFConfig": -3,
+			"controllers": [{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "fca5d62d-f857-48c6-a526-248056acb8c8",
+							"key": "currentLayer"
+						},{
+							"path": "gate.thr",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "01dd2ee9-70a5-41c1-98c7-1fea2e0a01dd",
+							"key": "currentChannel"
+						},{
+							"path": "dyn.thr",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "ec87bb54-0570-409d-a75a-3cda5b72c844",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "fb3aec61-1527-4986-ae32-7f46eb544547",
+							"key": "currentLayer"
+						},{
+							"path": "peq.selBand.freq",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "cd34c4f3-8895-4569-b98f-5f7ced7f0f01",
+							"key": "currentChannel"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "f156175e-7b1f-41ba-83ce-88836ce7adba",
+				"uid": "knb-0",
+				"name": "Ch knob-1",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 16,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 0,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "3e9ba580-5c11-491c-9133-2d9eb827be8c",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "f46f43d7-4f5d-406c-b60d-074f61e37a0c",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "3936eba4-2fda-4c1f-92d9-3ea0f4d606da",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9f439055-29e2-4721-a453-46e1f659f8ef",
+				"valueSource": 1,
+				"paramA": 32,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "98af00e1-ed00-4992-8627-60360b311d04",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": -1
+			},{
+				"uid": "solo-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "39bcbf21-47b8-481a-bebb-0ceb4c5a2d36",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "fa001b01-4a19-453b-b4b8-2183d73adb2e",
+				"valueSource": 1,
+				"paramA": 8,
+				"paramB": -1
+			},{
+				"uid": "mute-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "bdb0fc38-c700-4fc6-92a8-d5081a4acc36",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "a93a74a3-205f-451f-8b94-23399733fdd9",
+				"valueSource": 1,
+				"paramA": 16,
+				"paramB": -1
+			},{
+				"uid": "sel-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 0,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "b5daa2c2-44d7-4658-b0e4-ad5dcb892aad",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "e7ffa031-9c61-4e5b-83d5-15c8e98727e2",
+				"valueSource": 1,
+				"paramA": 24,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-0",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "88362010-a99e-4d3b-b9f6-34f0789ed9a2",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-1",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "096f234e-ae81-4725-a8c5-ee2c9439d36d",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-0",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "6214023b-b7c0-4323-a403-daac1e4141cc",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "2911fb10-fea2-42eb-8002-081325d25c8f",
+							"key": "midiLabelRef",
+							"controllerUid": "f156175e-7b1f-41ba-83ce-88836ce7adba"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-1",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "f002f56d-fa14-4af6-a1b2-e6036e6b3434",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-0",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "84da409f-17d0-422e-baef-08065a29c0b8",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-1",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "9e7dd78b-9429-4e74-aa21-f95683dd4da3",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "12a93ed1-ace2-42e8-8e15-f9afeca77d60",
+							"key": "currentLayer"
+						},{
+							"path": "gate.range",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "fa5a1910-8fc9-4052-b5ec-78e4a7eaedfe",
+							"key": "currentChannel"
+						},{
+							"path": "dyn.ratio",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "12301ca2-e919-41d6-bf6a-e76b150aca88",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 1,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "a017e001-1c8b-4310-a11f-e74d7492f588",
+							"key": "currentLayer"
+						},{
+							"path": "peq.selBand.gain",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "78a037dc-e655-4e72-a6cf-53bbe0a5fb78",
+							"key": "currentChannel"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "6acbd184-3370-4839-a8d2-9de6b120ddee",
+				"uid": "knb-1",
+				"name": "Ch knob-2",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 17,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 1,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "555079a0-588a-4296-9e81-3f73004b0a61",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "c4681ead-83ba-4b0d-b19e-8ad6190a65cf",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "8cf992ff-f70a-4b3c-bff3-987405269db6",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "baba9e77-ca09-4da2-9722-08481ddfc637",
+				"valueSource": 1,
+				"paramA": 33,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "67a571ab-f266-4e91-bad9-937fb907def0",
+				"valueSource": 1,
+				"paramA": 1,
+				"paramB": -1
+			},{
+				"uid": "solo-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "524cd3bd-1bc0-4641-9b94-b3392198a796",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "5180917e-d8f5-4bbd-bf78-bd357c0cb729",
+				"valueSource": 1,
+				"paramA": 9,
+				"paramB": -1
+			},{
+				"uid": "mute-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "57911b9a-6b99-4be7-bd7b-9dfdf8e48d53",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0b4b881c-b50d-45f6-81a5-2d7fe8db2c2c",
+				"valueSource": 1,
+				"paramA": 17,
+				"paramB": -1
+			},{
+				"uid": "sel-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 1,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "a65f2138-35b2-4f3a-9da7-74900e0cc2e4",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "33748445-c570-4118-8f1f-e6f04e3a6dd8",
+				"valueSource": 1,
+				"paramA": 25,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-1",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "8cb983cb-b4c0-4db0-88a1-65746057e8ad",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-2",
+				"channel": 1,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "5d6bd477-e60c-4d18-ae8b-aa7f3c2486c5",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-1",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "c42c8568-b734-4aa3-be41-56e667ed1404",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "4eb514de-3ec7-496c-840a-72620f7c942c",
+							"key": "midiLabelRef",
+							"controllerUid": "6acbd184-3370-4839-a8d2-9de6b120ddee"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-2",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "97bc98a5-ef34-4ce9-acaa-3fda0185a6ef",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-1",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "d97e71b9-19a2-4eff-bf26-2b442a2ef196",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-2",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "8efac247-490e-4007-9682-c7f7839445a8",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "ddaf356a-c31d-4c50-ae47-a4ff11ae9029",
+							"key": "currentLayer"
+						},{
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "a228724a-8e79-448a-bbfe-bad1b21833ce",
+							"key": "dummy"
+						},{
+							"path": "dyn.gain",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "7935719b-ae6f-479a-96d2-9f4f5b62380d",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 2,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "0422a8ca-72d6-4070-9649-ab381c03bcad",
+							"key": "currentLayer"
+						},{
+							"path": "peq.selBand.q",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "5ac41185-3718-4c37-80b0-133dc7eb08d0",
+							"key": "currentChannel"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "037ef779-62a8-4c37-bd0e-90e3d95f0fe1",
+				"uid": "knb-2",
+				"name": "Ch knob-3",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 18,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 2,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "1151cd57-812c-4aa8-b878-588c2d4252c0",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "e49056d9-1c81-4aa0-a386-dd27c0f1f2b2",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "b3481d1f-6dc0-4874-9cf2-66cde559fc35",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "ad759588-c389-478a-a8e5-a54659006538",
+				"valueSource": 1,
+				"paramA": 34,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "546bd0e8-8f4c-47a2-811b-0327c92a52a1",
+				"valueSource": 1,
+				"paramA": 2,
+				"paramB": -1
+			},{
+				"uid": "solo-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "c0898f95-5d0c-4d6c-be2b-5ddd4969d6df",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "e76c7df2-3ea4-4edb-99cb-cbfa4579d1a1",
+				"valueSource": 1,
+				"paramA": 10,
+				"paramB": -1
+			},{
+				"uid": "mute-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "e673875a-f1b3-4430-a6d0-41cdcb9c912a",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "25306833-ea15-4fa4-9f53-01259d55e79d",
+				"valueSource": 1,
+				"paramA": 18,
+				"paramB": -1
+			},{
+				"uid": "sel-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 2,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "bd3be30b-3cb8-47d0-8f3b-7ad480a833f6",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d265683c-12ea-447a-a28f-bdde05033003",
+				"valueSource": 1,
+				"paramA": 26,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-2",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "5d840494-b8a3-4685-85ee-8371276a3487",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-3",
+				"channel": 2,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "182b1429-dc99-4ed4-aa12-ba50028b545c",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-2",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "c0ed4057-6108-4c51-95dd-3acc7ecd9fe5",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "b6f7e92c-8ff9-4cd1-b808-81c52ae046e4",
+							"key": "midiLabelRef",
+							"controllerUid": "037ef779-62a8-4c37-bd0e-90e3d95f0fe1"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-3",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "82158db1-619c-49ba-a1f0-dfef757039c7",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-2",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "d8cef2db-c041-414e-8b2f-88c4d54d3ddc",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-3",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "9cd02998-ea2f-4f19-92a9-6e9a1d0b458a",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "a7c67b08-4167-49bf-9d24-f58177e700f3",
+							"key": "currentLayer"
+						},{
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "66bf0118-2ba4-4f61-80a7-4bd3881b4a80",
+							"key": "dummy"
+						},{
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "8352a35e-e7fe-4a13-8a8d-51aff2f88c11",
+							"key": "dummy"
+						},{
+							"path": "headamp.gain",
+							"offset": 3,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "3e793a31-3b8b-40ad-add3-0f75d3b03eb3",
+							"key": "currentLayer"
+						},{
+							"path": "peq.selBand.type",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "343ff0a8-8aba-424e-a95f-3769c99fc5dd",
+							"key": "currentChannel"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "c9888965-4586-4f85-a428-e3dd0833d6ae",
+				"uid": "knb-3",
+				"name": "Ch knob-4",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 19,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 3,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "1359dcf2-a956-4015-a116-aa67db7e4aa6",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "98b61cbb-1d5c-44ac-b865-9b5a895b947c",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "488fcd52-1531-40cf-bcf3-28eef824096a",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "a8dbcde8-a732-4844-9f37-648e6de225c7",
+				"valueSource": 1,
+				"paramA": 35,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "2edee51e-fae1-4a0d-805f-b7c8fb945597",
+				"valueSource": 1,
+				"paramA": 3,
+				"paramB": -1
+			},{
+				"uid": "solo-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "bc5875f7-583d-45d9-8e84-395804659ec2",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9ccb903f-aad2-4463-b63e-f85319ba64db",
+				"valueSource": 1,
+				"paramA": 11,
+				"paramB": -1
+			},{
+				"uid": "mute-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "f365187e-9ab7-4e6b-89d9-56b8dce631df",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "3f52082c-1652-410e-8e78-4932c89132a4",
+				"valueSource": 1,
+				"paramA": 19,
+				"paramB": -1
+			},{
+				"uid": "sel-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 3,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "17fdae77-e198-493d-bc96-4ee617eca73a",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0ef3a340-ea9a-4ba0-9648-2899604abdca",
+				"valueSource": 1,
+				"paramA": 27,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-3",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "fde2a019-8ef5-467c-adcf-3453404c418d",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-4",
+				"channel": 3,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "79f0596c-b72a-4a3d-b586-fb91a63adafc",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-3",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "a2b99625-6117-48cd-b866-c4313d819e47",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "92eee9fb-48b6-45f2-8ed1-83fbb1acfa9f",
+							"key": "midiLabelRef",
+							"controllerUid": "c9888965-4586-4f85-a428-e3dd0833d6ae"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-4",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "9d38ca62-f681-4ca8-846e-585241a1b002",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-3",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "799b74a2-d5d6-4df0-8e9d-39d36508db2d",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-4",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "9064d978-972b-4751-b0b1-031d10632ff3",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "9dc1679c-287d-4694-a231-0cc0561e1f50",
+							"key": "currentLayer"
+						},{
+							"path": "gate.attack",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "692c80de-52fe-440a-8961-b3c3dc14e557",
+							"key": "currentChannel"
+						},{
+							"path": "dyn.attack",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "97cbcdbe-e112-43c3-abd8-7351affad4b5",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 4,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "7d473ba3-eab8-40d2-8db0-a411c2938218",
+							"key": "currentLayer"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "e2dc8842-e26c-42ee-b730-4267e49bf9bb",
+				"uid": "knb-4",
+				"name": "Ch knob-5",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 20,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 4,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "6a1ef55d-e0eb-44b7-bf1f-d7db704c46cc",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "32d96ee5-ed95-439a-957b-7bf83147ae00",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "eab6e012-011f-4651-9e7a-341e6666b178",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "91be42a0-5549-47d2-ab42-ddcc52795961",
+				"valueSource": 1,
+				"paramA": 36,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "4ddf7d49-1990-4534-8979-30d68faa99cd",
+				"valueSource": 1,
+				"paramA": 4,
+				"paramB": -1
+			},{
+				"uid": "solo-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "66294528-9efd-4ccb-8d74-459d1741ce45",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "05beeac0-829d-43f6-be96-2aa522fe88eb",
+				"valueSource": 1,
+				"paramA": 12,
+				"paramB": -1
+			},{
+				"uid": "mute-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "66986cb0-8585-4c64-9a84-f56a84f6d004",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9e8d1b4b-44c3-441a-9946-c785f922b3e5",
+				"valueSource": 1,
+				"paramA": 20,
+				"paramB": -1
+			},{
+				"uid": "sel-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 4,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "8359ac81-c30e-4365-947f-a01bc37b5432",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9ec4253e-039b-4a0e-a713-ae9f3bc31b5e",
+				"valueSource": 1,
+				"paramA": 28,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-4",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "a1a1f8a8-17dc-4cda-af60-2c590a459be2",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-5",
+				"channel": 4,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "952b7c7d-348e-4637-a122-31229308e4d0",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-4",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "56193c56-1456-4558-abf0-2ae61e1ccad5",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "e01815a4-76e8-46f8-967c-46fe5deefe5b",
+							"key": "midiLabelRef",
+							"controllerUid": "e2dc8842-e26c-42ee-b730-4267e49bf9bb"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-5",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "24314ef5-67f4-4fd6-a34e-fc54d896b913",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-4",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "2fbfcfd1-fea2-48dd-b7ca-42219f82f95a",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-5",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "909580f1-049b-4393-8db3-891fd0028d61",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "abed7ee9-5d6e-4834-a157-6ceedc6475e6",
+							"key": "currentLayer"
+						},{
+							"path": "gate.hold",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "15d65c65-9162-4817-a652-0c7f5ff93079",
+							"key": "currentChannel"
+						},{
+							"path": "dyn.hold",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "7f64e3f7-99d4-4107-99cf-e85a17cf9695",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 5,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "c864a87d-a1d8-48cb-b64b-bd9815b6ee7f",
+							"key": "currentLayer"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "5ec5e68c-6a47-43fa-90a9-e915f6e69da9",
+				"uid": "knb-5",
+				"name": "Ch knob-6",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 21,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 5,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "3f70146b-6508-4686-96da-0199bdf7ed0d",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "c36ae6b4-40c0-4fa0-986f-a040b279607a",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "3e80af34-3480-4d4a-8a22-8568bb69e9cd",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "42d25b6b-64df-4a22-891f-47ab7b459577",
+				"valueSource": 1,
+				"paramA": 37,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "390b32dd-cd72-4d3e-b35c-a8f8d7a44655",
+				"valueSource": 1,
+				"paramA": 5,
+				"paramB": -1
+			},{
+				"uid": "solo-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "1135a733-10b1-479a-ae61-4cd87b487a79",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "4ceb0d62-4b2c-4faa-8a1b-19a2e98406ac",
+				"valueSource": 1,
+				"paramA": 13,
+				"paramB": -1
+			},{
+				"uid": "mute-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "159aeed2-45e1-4b47-b0aa-3691ab8d8a70",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "1c02a190-cdab-42e5-8799-1a56e748642b",
+				"valueSource": 1,
+				"paramA": 21,
+				"paramB": -1
+			},{
+				"uid": "sel-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 5,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "81ac5e85-e8c6-4a8f-b472-176c1037ac78",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "b5123323-0658-46cc-a031-d307d038c997",
+				"valueSource": 1,
+				"paramA": 29,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-5",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "ef2363f9-c20d-456c-aabf-5e6a967c6edc",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-6",
+				"channel": 5,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "5002b4c0-13ad-43cb-8aa4-7736013c4914",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-5",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "d43241b3-ba31-4103-ad8b-4e67b1335e26",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "9ac664e7-0971-4bf8-8255-aa93219e6071",
+							"key": "midiLabelRef",
+							"controllerUid": "5ec5e68c-6a47-43fa-90a9-e915f6e69da9"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-6",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "0a7ceaa7-e19d-460b-855a-5be7f29ea058",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-5",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "fb3d787f-6573-49d1-998c-fe725b25fc72",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-6",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "82c1edb1-e180-4657-baba-f2801c3472ae",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "e20d1288-0a51-411d-b0b5-b32315be78a7",
+							"key": "currentLayer"
+						},{
+							"path": "gate.release",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "62413db3-8bf7-4fe3-ab9e-3b174620da06",
+							"key": "currentChannel"
+						},{
+							"path": "dyn.release",
+							"offset": 0,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "8c70a0db-cd40-4dbe-83d6-aaea3450df92",
+							"key": "currentChannel"
+						},{
+							"path": "headamp.gain",
+							"offset": 6,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "3489b717-49ab-4fed-9d38-10b26d399eae",
+							"key": "currentLayer"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "7a200daf-f558-4b6f-a8f3-72044f334a29",
+				"uid": "knb-6",
+				"name": "Ch knob-7",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 22,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 6,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "e5948b82-b36a-45cc-bee0-a289b3f2bdc6",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "5d950b5c-91c5-4a5b-b02a-19c6a0818dd3",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "e1e8d65f-5d9e-4ab1-befa-9b19f8643920",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "a154b365-a306-49b3-b67d-054b0796d17d",
+				"valueSource": 1,
+				"paramA": 38,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c515aa97-92d6-4772-b3ce-8bdd0af2bca7",
+				"valueSource": 1,
+				"paramA": 6,
+				"paramB": -1
+			},{
+				"uid": "solo-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "c2aa1247-9f5c-4141-831b-30be77941c72",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "f121c414-fb36-46ce-ab67-60435be8d819",
+				"valueSource": 1,
+				"paramA": 14,
+				"paramB": -1
+			},{
+				"uid": "mute-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "12588b68-eeb2-4283-9034-a70725d0b891",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "301bce28-4e30-4cd7-8f0b-181489b9d531",
+				"valueSource": 1,
+				"paramA": 22,
+				"paramB": -1
+			},{
+				"uid": "sel-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 6,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "c9d616c1-7feb-48e1-a91e-f80b9665ae33",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "ce7e87d5-2426-4d95-a412-4003860d2e62",
+				"valueSource": 1,
+				"paramA": 30,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-6",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "e0ea3116-ed6c-4acf-a263-75a08f9ba1de",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-7",
+				"channel": 6,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "419e85ab-1357-4937-bfd2-91476e87279c",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-6",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "f27fb808-7f83-4ba8-a8b4-42b70a8f83ce",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "a2fffa9d-c5a2-4faf-a273-8a7bad4df649",
+							"key": "midiLabelRef",
+							"controllerUid": "7a200daf-f558-4b6f-a8f3-72044f334a29"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-7",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "e73ada5a-f3ad-4a06-bb70-a9b337135221",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-6",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "37cdb129-8dd0-4dcb-9c06-283de7857463",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-7",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "08dc8513-8e53-4768-bd89-0093574f8670",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"fact": 1.0,
+				"invert": false,
+				"decrementValue": 101,
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.pan",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "351d19c9-f91c-44b8-83d2-b606f4d19d94",
+							"key": "currentLayer"
+						},{
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "5074cc92-bcbf-4059-abd5-f8cb6b574807",
+							"key": "dummy"
+						},{
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "18a95bf1-377c-4dfb-8562-fbdf4e3d58cf",
+							"key": "dummy"
+						},{
+							"path": "headamp.gain",
+							"offset": 7,
+							"enable": false,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "86b2c9b1-2ab0-430c-a09e-e29ccfe68d67",
+							"key": "currentLayer"
+						}]
+					},
+					"key": "main"
+				},
+				"channel": 0,
+				"incrementValue": 1,
+				"outputMode": 0,
+				"eventType": 2,
+				"type": -1,
+				"uuid": "0b8c0661-f50f-4dd8-81fe-ef2b79680bd1",
+				"uid": "knb-7",
+				"name": "Ch knob-8",
+				"supportsMultipleSteps": true,
+				"valueSource": 1,
+				"paramA": 23,
+				"paramB": -1
+			},{
+				"uid": "knb-btn-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"onValue": "0.0",
+							"mode": "abs",
+							"fade": "250.0",
+							"offValue": "0.0",
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "mix.pan",
+										"offset": 7,
+										"enable": true,
+										"boolMode": 0,
+										"offset2": 0,
+										"SoF": true,
+										"chSrc": 2,
+										"invertOutput": false,
+										"uuid": "8fa826bc-4b98-43e1-851d-211f178c2404",
+										"key": "currentLayer"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "723bae5b-ae12-41bc-ad88-f1489f6ed53a",
+							"key": "setValue"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "link.linked",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "7d329c4e-8813-4f5e-a42b-19ca68a5e7c6",
+							"key": "currentLayer"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch knob Press-8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "7a3cb875-be9d-41d9-a0fe-dc6d48349c99",
+				"valueSource": 1,
+				"paramA": 39,
+				"paramB": -1
+			},{
+				"uid": "rec-rdy-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rec Ready-8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "4efaac45-8a96-4578-ae23-f8a761e37af2",
+				"valueSource": 1,
+				"paramA": 7,
+				"paramB": -1
+			},{
+				"uid": "solo-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "solo",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "6ad6675f-7237-4a49-97ba-9d94216f1d90",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Solo-8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0f0e5d21-cb90-464b-9040-78b2b0e1ae64",
+				"valueSource": 1,
+				"paramA": 15,
+				"paramB": -1
+			},{
+				"uid": "mute-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"path": "mix.on",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "9fa1fd40-8e3b-4ffe-9ab8-29439cfd68de",
+							"key": "currentLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mute-8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c375d00b-860d-4b87-8c57-6036fbe1b1e6",
+				"valueSource": 1,
+				"paramA": 23,
+				"paramB": -1
+			},{
+				"uid": "sel-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"mode": 1,
+							"src": 7,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "61be3751-0603-486b-b452-d43a8c4d3047",
+							"key": "selectCh"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Select-8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c6837bd0-8245-4c5a-a551-c3bd45898182",
+				"valueSource": 1,
+				"paramA": 31,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-7",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"path": "mix.lvl",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "6d82fe26-4130-49dc-ba43-107965d9a897",
+							"key": "currentLayer"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Fader-8",
+				"channel": 7,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "c0b6633c-0838-48a2-803a-ca0212698d6e",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "lcd-7",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.on",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": true,
+							"uuid": "a94f9cdc-6839-45d5-a80d-ef147fab35c5",
+							"key": "currentLayer"
+						},{
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 0,
+							"invertOutput": false,
+							"uuid": "9ca50c53-e5b8-4b1b-b684-a7f85e61fc3c",
+							"key": "midiLabelRef",
+							"controllerUid": "0b8c0661-f50f-4dd8-81fe-ef2b79680bd1"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD-8",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[chname]\n[value]",
+				"type": -1,
+				"uuid": "73806b72-0113-4a3a-bf40-f110c8ee35ba",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "meter-7",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "994b837a-8627-4ea9-b9c4-631e637b11aa",
+							"key": "dynChSelect"
+						}
+					},
+					"key": "main"
+				},
+				"name": "Meter-8",
+				"channel": 100,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "3e372857-cc7e-4ce8-8789-befa3bb9c160",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "assign-1-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"actionIndex": 3,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "667f11de-0bea-4c01-a2f2-d9b73d0280de",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"actionIndex": 0,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "20a71881-0ce3-4da7-ae14-1ccfde643d11",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Assign-1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d2f4dd1b-e4ab-4e68-9987-321564a11c72",
+				"valueSource": 1,
+				"paramA": 40,
+				"paramB": -1
+			},{
+				"uid": "assign-2-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Assign-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d77f4248-c7b9-473f-9c12-40f9868c5acf",
+				"valueSource": 1,
+				"paramA": 41,
+				"paramB": -1
+			},{
+				"uid": "pan-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"actionIndex": 0,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "fd49026b-e87e-4ded-9272-9083d3ceae76",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"actionIndex": 0,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "9f443463-9e1f-4d0d-95f8-5d38f66dc476",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Pan",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d07617fa-8ccd-4be0-9078-c4cf56f2cf17",
+				"valueSource": 1,
+				"paramA": 42,
+				"paramB": -1
+			},{
+				"uid": "plugins-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": [{
+							"actionIndex": 1,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "385c485d-36d6-4cc7-926b-fb371bb82ff9",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"appLink": false,
+							"param": 0,
+							"enable": true,
+							"boolMode": 1,
+							"params": {
+								"id": "chgate"
+							},
+							"invertOutput": false,
+							"uuid": "d663e96c-df17-4072-b510-38590f6a9a6c",
+							"key": "openView",
+							"paramB": 0
+						}]
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "gate.on",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "3b5206df-4bce-4df4-8c34-2670b60b8561",
+							"key": "currentChannel"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Plugins",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "7bb03328-e982-4b16-9e8c-7ea4827fda89",
+				"valueSource": 1,
+				"paramA": 43,
+				"paramB": -1
+			},{
+				"uid": "eq-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": [{
+							"actionIndex": 1,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "db6925ad-57e3-4374-a9e5-67d577df123a",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"actionIndex": 4,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "b5b2517f-6e4e-46ad-8840-cbe071a32133",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"appLink": false,
+							"param": 0,
+							"enable": true,
+							"boolMode": 0,
+							"params": {
+								"id": "chpeq"
+							},
+							"invertOutput": false,
+							"uuid": "64fd6553-e37a-452f-a999-d22859322ad4",
+							"key": "openView",
+							"paramB": 0
+						}]
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "peq.on",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "fede0660-15ae-4346-a4ae-8ae592672e5d",
+							"key": "currentChannel"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "EQ",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0fd450c4-051f-4ce5-b33d-2ee6f474d85d",
+				"valueSource": 1,
+				"paramA": 44,
+				"paramB": -1
+			},{
+				"uid": "inst-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": [{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "f213a188-cba0-40ad-ad81-80d8dfec7a7e",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"appLink": false,
+							"param": 0,
+							"enable": true,
+							"boolMode": 0,
+							"params": {
+								"id": "chdyn"
+							},
+							"invertOutput": false,
+							"uuid": "58d9aad7-6758-419f-9709-38c87ec25662",
+							"key": "openView",
+							"paramB": 0
+						}]
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": {
+							"path": "dyn.on",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 0,
+							"invertOutput": false,
+							"uuid": "0d77fa95-84b2-45ad-8143-6f68473a4993",
+							"key": "currentChannel"
+						}
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Instr.",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0372e5e5-0e3d-4850-a4b4-5b3e78270ba1",
+				"valueSource": 1,
+				"paramA": 45,
+				"paramB": -1
+			},{
+				"uid": "bnk-l-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"sGrp": -1,
+							"boolMode": 0,
+							"id": -127,
+							"invertOutput": false,
+							"uuid": "ba145293-cbaf-4b1e-a253-39f54d9107bb",
+							"key": "selectLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Bank prev",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "09a4631c-ee79-4e42-b0f1-e0e54f40eb3b",
+				"valueSource": 1,
+				"paramA": 46,
+				"paramB": -1
+			},{
+				"uid": "bnk-r-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"sGrp": -1,
+							"boolMode": 0,
+							"id": -128,
+							"invertOutput": false,
+							"uuid": "af9c3a0f-b171-4596-a826-eb7e7b4ed37f",
+							"key": "selectLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Bank next",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "50865cfe-47ed-4c87-859c-61f51923114b",
+				"valueSource": 1,
+				"paramA": 47,
+				"paramB": -1
+			},{
+				"uid": "ch-l-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "15d2adea-683f-44eb-bf94-61ec7153f765",
+							"steps": -4,
+							"key": "midiScrollLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch prev",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "cea82d59-39b9-4b97-afbb-fd54f90f27a5",
+				"valueSource": 1,
+				"paramA": 48,
+				"paramB": -1
+			},{
+				"uid": "ch-r-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "74cb2ac4-e959-4f1e-85bf-1b750503b633",
+							"steps": 4,
+							"key": "midiScrollLayer"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ch next",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "74203259-4b60-4c67-9383-bd5cb09a3185",
+				"valueSource": 1,
+				"paramA": 49,
+				"paramB": -1
+			},{
+				"uid": "flip-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": [{
+										"sendID": -12,
+										"enable": true,
+										"boolMode": 0,
+										"invertOutput": false,
+										"uuid": "b0b49717-bb5c-46b2-8b39-8d4a21deb3d9",
+										"key": "sendsOnFader"
+									},{
+										"actionIndex": 2,
+										"enable": true,
+										"selectMode": 0,
+										"controllerName": "Arrow",
+										"boolMode": 0,
+										"invertOutput": false,
+										"uuid": "7623764e-12c9-4d76-9108-73214252f535",
+										"deviceName": "",
+										"key": "actionLayerChange"
+									}]
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "a6b63a7c-1244-40ec-ad17-d5b27843a26a",
+							"key": "flash"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Flip",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "f23865bf-f60b-4569-84a3-4f7f09aeefae",
+				"valueSource": 1,
+				"paramA": 50,
+				"paramB": -1
+			},{
+				"uid": "edit-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"actionIndex": 0,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Ch knob-",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "08bdcc1b-a88b-4ea7-9451-fda4d4c034dd",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Edit",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0f4023b0-1907-4359-adcc-0d642013688b",
+				"valueSource": 1,
+				"paramA": 51,
+				"paramB": -1
+			},{
+				"uid": "name-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"appLink": false,
+							"param": 0,
+							"enable": true,
+							"boolMode": 0,
+							"params": {
+								"id": "chov"
+							},
+							"invertOutput": false,
+							"uuid": "1d295209-9c92-4dc1-94ab-78e91c54e29c",
+							"key": "openView",
+							"paramB": 0
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Name/Value",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "370eaafb-0d3a-4fa5-b67b-84c8f57888aa",
+				"valueSource": 1,
+				"paramA": 52,
+				"paramB": -1
+			},{
+				"uid": "smpte-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "453a46fa-0f17-46e6-b7e5-c29344cdc5f1",
+							"key": "pkHoldReset"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Smpte",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "8dcd6b05-1605-4847-8244-7653259f4d99",
+				"valueSource": 1,
+				"paramA": 53,
+				"paramB": -1
+			},{
+				"uid": "f-btn-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 0,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "9aff8bb6-b07a-4096-b0e4-fc7ba1d81eaf",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "1c64f340-306a-48f0-8d71-36bcee5c308e",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "2c1c62ec-209e-4140-b6b4-51b0806e3382",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F1",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "f6000f1b-12d6-46fa-a4e5-e8ff7cfc637b",
+				"valueSource": 1,
+				"paramA": 54,
+				"paramB": -1
+			},{
+				"uid": "f-btn-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 1,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "6d4adb6c-4a97-4f48-a71c-9e096a5456df",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "d59b8a51-b639-4dbb-bfae-67471403d91e",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "e049c7a8-581a-4ee6-be21-44a6051e3fd9",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "cd11a97d-7899-470a-a07c-76c649cef531",
+				"valueSource": 1,
+				"paramA": 55,
+				"paramB": -1
+			},{
+				"uid": "f-btn-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 2,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "9a8ff3de-ffff-413b-b7e3-24c2b648819a",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "0b289f44-9bac-4438-9f4e-d08076f64e09",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "3924defb-4746-4735-a8dd-81d5ebdcae0f",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F3",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "1b1990bc-76ab-41b6-99f1-142e202908fe",
+				"valueSource": 1,
+				"paramA": 56,
+				"paramB": -1
+			},{
+				"uid": "f-btn-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 3,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "dd1c6324-ec41-4a65-adc5-4d261cddb6fe",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "a699f35f-06dc-44b0-bc8f-e504b5355daf",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "e2e72839-683c-4132-a1ce-36f54398ff00",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F4",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "895193ef-e6e4-45a7-9ad6-d28157a61d0d",
+				"valueSource": 1,
+				"paramA": 57,
+				"paramB": -1
+			},{
+				"uid": "f-btn-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 4,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "d54bb00b-c629-4fff-ad8f-0ee43a824803",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "b2f7dd36-8465-4043-869f-f68a702c37de",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "b3185ec0-fa10-4d47-a19a-a84b7a1aeeb1",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F5",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "29f2865a-1f52-4ede-bcd4-92a01fd08755",
+				"valueSource": 1,
+				"paramA": 58,
+				"paramB": -1
+			},{
+				"uid": "f-btn-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 5,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "15540d94-e921-4113-af4f-4a47f555904e",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "7287a7e3-e2c9-49a0-838a-4dc7f873b46e",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "bef7ca05-320b-4f97-b92b-8dc325ecf9ef",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F6",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "76518304-1623-43a6-8606-cc0441be2201",
+				"valueSource": 1,
+				"paramA": 59,
+				"paramB": -1
+			},{
+				"uid": "f-btn-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 6,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "aa4585bc-a4f5-4200-af94-39dbb3cbeece",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "9449e4bd-6886-45e7-925a-ae95491d2424",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "2f360b4c-3a6f-4d33-ade0-9696dacc7c4c",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F7",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "489bdfc1-9a58-4302-8700-1db4b2ac090f",
+				"valueSource": 1,
+				"paramA": 60,
+				"paramB": -1
+			},{
+				"uid": "f-btn-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 7,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "e2299738-aec4-400e-8924-7a8a6afc8de7",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "0af8ca7d-88a0-4a48-9bea-a288c97a47a4",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "9744ae13-3c25-475e-9941-ed93ff1de7e7",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F8",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "a8c46746-b078-4d06-9d88-46d8d0aa17b9",
+				"valueSource": 1,
+				"paramA": 61,
+				"paramB": -1
+			},{
+				"uid": "f-btn-8",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 8,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "691ea584-ed92-4ac7-ba43-ff02e7e56720",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "f0cd42f5-c977-4014-aea9-bdf4f9051811",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "e9be7757-d054-4006-849f-53cca7d7e06a",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F9",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "611f9c02-86e0-49d2-a260-eef2baeb88aa",
+				"valueSource": 1,
+				"paramA": 62,
+				"paramB": -1
+			},{
+				"uid": "f-btn-9",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"sendID": 9,
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "878658cf-c7bb-4abb-b40b-34dcfb831cb9",
+										"key": "sendsOnFader"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "8f66f41b-e7aa-4d7e-b04e-0a7700f0e1df",
+							"key": "flash"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "e345003d-edd5-440d-bdfd-9ee1eb2a2497",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F10",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "8f21cd9a-92d8-4a51-bdd7-0247e1218d16",
+				"valueSource": 1,
+				"paramA": 63,
+				"paramB": -1
+			},{
+				"uid": "f-btn-10",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"sendID": 10,
+							"enable": true,
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "2d7589e6-d450-408a-91a3-7a27e11b81e5",
+							"key": "sendsOnFader"
+						},{
+							"actionIndex": 2,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "58459f94-ebe2-453d-94f8-da72721b114f",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F11",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "eb88a5f1-6ad0-43d3-9e72-295e177daa7a",
+				"valueSource": 1,
+				"paramA": 64,
+				"paramB": -1
+			},{
+				"uid": "f-btn-11",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"sendID": 11,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "c6f4878a-538b-48f1-9633-200eaac0c356",
+							"key": "sendsOnFader"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F12",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "0a5022ba-7863-4113-a754-84df40d8f103",
+				"valueSource": 1,
+				"paramA": 65,
+				"paramB": -1
+			},{
+				"uid": "f-btn-12",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"sendID": 12,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "69c864e4-8445-4215-bed4-9fa9da793483",
+							"key": "sendsOnFader"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F13",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "00f96b58-5b3a-47cd-b0a5-b207eadccc72",
+				"valueSource": 1,
+				"paramA": 66,
+				"paramB": -1
+			},{
+				"uid": "f-btn-13",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"sendID": 13,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "4f4ab149-69e1-4cea-8b7b-1a59a9d7d336",
+							"key": "sendsOnFader"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F14",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "a90ab3a8-2e82-48e6-babc-ad455d320d8f",
+				"valueSource": 1,
+				"paramA": 67,
+				"paramB": -1
+			},{
+				"uid": "f-btn-14",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"sendID": 14,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "19cc282e-ba2f-478a-bf4c-ef9ca32d3ad5",
+							"key": "sendsOnFader"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F15",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "366dc5fd-e5bd-45be-82e7-1a2b9b425c56",
+				"valueSource": 1,
+				"paramA": 68,
+				"paramB": -1
+			},{
+				"uid": "f-btn-15",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": {
+							"sendID": 15,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "d0432bcc-fa97-4628-aea1-76b1a40f5ed0",
+							"key": "sendsOnFader"
+						}
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "F16",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "1b3fbb73-9ee6-4c47-a460-0f29381db970",
+				"valueSource": 1,
+				"paramA": 69,
+				"paramB": -1
+			},{
+				"uid": "ctrl-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Ctrl",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "ba4a7331-9890-48d8-b678-f7e8a056466b",
+				"valueSource": 1,
+				"paramA": 70,
+				"paramB": -1
+			},{
+				"uid": "option-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Option",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9f5edb4c-cfe1-4780-a209-226cd0eddd2b",
+				"valueSource": 1,
+				"paramA": 71,
+				"paramB": -1
+			},{
+				"uid": "snap-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Snapshot",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "509004be-e4b4-4cac-a5d7-7147798db91d",
+				"valueSource": 1,
+				"paramA": 72,
+				"paramB": -1
+			},{
+				"uid": "shift-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Shift",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "e2ddba92-9d79-4f20-afcd-498c193aefb8",
+				"valueSource": 1,
+				"paramA": 73,
+				"paramB": -1
+			},{
+				"uid": "read-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Read/Off",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "34269a5c-4c2c-48cb-b828-84162eb2b18e",
+				"valueSource": 1,
+				"paramA": 74,
+				"paramB": -1
+			},{
+				"uid": "write-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Write",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d7425261-3a53-4917-a5c8-762c39ff0c79",
+				"valueSource": 1,
+				"paramA": 75,
+				"paramB": -1
+			},{
+				"uid": "undo-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Undo",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "5a067a25-a0d6-4d69-8d75-33755b5ba384",
+				"valueSource": 1,
+				"paramA": 76,
+				"paramB": -1
+			},{
+				"uid": "save-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Save",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c2d85a59-7147-4ebb-b5b7-69a0ea90e409",
+				"valueSource": 1,
+				"paramA": 77,
+				"paramB": -1
+			},{
+				"uid": "touch-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Touch",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "4318519a-9649-49bf-82f5-8e0af5bc1d85",
+				"valueSource": 1,
+				"paramA": 78,
+				"paramB": -1
+			},{
+				"uid": "redo-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Redo",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "41d59472-5994-4baa-9016-60addf2c2da3",
+				"valueSource": 1,
+				"paramA": 79,
+				"paramB": -1
+			},{
+				"uid": "fdr-grp-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fdr grp",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "982b4999-9797-4992-803a-22fe0b299b87",
+				"valueSource": 1,
+				"paramA": 80,
+				"paramB": -1
+			},{
+				"uid": "clr-solo-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Clr solo",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c118d509-b284-4896-89b2-f64fc591566b",
+				"valueSource": 1,
+				"paramA": 81,
+				"paramB": -1
+			},{
+				"uid": "mrkr-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Marker",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "083ebc36-ca49-4d38-8c02-8829d5919b3d",
+				"valueSource": 1,
+				"paramA": 82,
+				"paramB": -1
+			},{
+				"uid": "mixer-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Mixer",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "6c7b8517-5e09-4637-adb7-181e54bdbd93",
+				"valueSource": 1,
+				"paramA": 83,
+				"paramB": -1
+			},{
+				"uid": "from-l-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "From <-",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "98f97bfd-2bd5-4c5d-b59a-7ab1f65325ca",
+				"valueSource": 1,
+				"paramA": 84,
+				"paramB": -1
+			},{
+				"uid": "from-r-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "From ->",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "c98d78cb-e600-4f64-a6f4-e02ff24f740d",
+				"valueSource": 1,
+				"paramA": 85,
+				"paramB": -1
+			},{
+				"uid": "end-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "End",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "83cff0de-1549-4880-8f72-0eca8b32a9e1",
+				"valueSource": 1,
+				"paramA": 86,
+				"paramB": -1
+			},{
+				"uid": "pi-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Pi",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "dc8889ca-e53a-4a73-ad47-91c768926b6c",
+				"valueSource": 1,
+				"paramA": 87,
+				"paramB": -1
+			},{
+				"uid": "po-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Po",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "37a6fb76-24b5-47a8-be0c-a76cf16be56a",
+				"valueSource": 1,
+				"paramA": 88,
+				"paramB": -1
+			},{
+				"uid": "loop-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Loop",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "63a72fb9-e5c5-4fae-ac55-f4f9a370b287",
+				"valueSource": 1,
+				"paramA": 89,
+				"paramB": -1
+			},{
+				"uid": "home-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 0,
+							"slot": {
+								"actions": {
+									"actions": {
+										"enable": true,
+										"boolMode": 1,
+										"invertOutput": false,
+										"uuid": "860af1ca-b933-421c-9d79-9b61c2a9aad1",
+										"key": "clrSolo"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "62475068-4f62-4eb2-914a-eaf54f49821b",
+							"key": "flash"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Home",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "2513cc8f-47b6-4293-8d98-1a58bf851924",
+				"valueSource": 1,
+				"paramA": 90,
+				"paramB": -1
+			},{
+				"uid": "rewind-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Rewind",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "bb4c9b96-3fa7-4ba5-bac0-73bdc3cb4be3",
+				"valueSource": 1,
+				"paramA": 91,
+				"paramB": -1
+			},{
+				"uid": "ff-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fast forwd",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d687c485-ab79-48eb-bb83-7d2cd5016f55",
+				"valueSource": 1,
+				"paramA": 92,
+				"paramB": -1
+			},{
+				"uid": "stop-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"enable": true,
+							"boolMode": 1,
+							"slot": {
+								"actions": {
+									"actions": {
+										"path": "monitor.ch.0.mute",
+										"enable": true,
+										"boolMode": 0,
+										"invertOutput": false,
+										"uuid": "f834fc9e-ea81-4bfa-95b8-cb8a17103726",
+										"key": "consoleParam"
+									}
+								},
+								"key": "main"
+							},
+							"invertOutput": false,
+							"uuid": "0fbbe1ab-a618-4107-a86b-e6157fde39f5",
+							"key": "flash"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Stop",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "09f8755c-ef61-4ff5-8ce1-12d595e375e4",
+				"valueSource": 1,
+				"paramA": 93,
+				"paramB": -1
+			},{
+				"uid": "play-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Play",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "51b3d757-ec37-4c77-b2cb-b6695ba6cb41",
+				"valueSource": 1,
+				"paramA": 94,
+				"paramB": -1
+			},{
+				"uid": "rec-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Record",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "333cc48a-04aa-46d8-adaf-f104a5dd1999",
+				"valueSource": 1,
+				"paramA": 95,
+				"paramB": -1
+			},{
+				"uid": "arr-u-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Arrow Up",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "05619cf6-d012-44ed-b544-a79f0b267a03",
+				"valueSource": 1,
+				"paramA": 96,
+				"paramB": -1
+			},{
+				"uid": "arr-d-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Arrow down",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "fd765c0a-4808-4765-88f1-15c59f4d3d2e",
+				"valueSource": 1,
+				"paramA": 97,
+				"paramB": -1
+			},{
+				"uid": "arr-l-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"mode": 4,
+							"src": 0,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "9a81b4e5-37d0-4833-8a3f-e67ee16ab3bb",
+							"key": "selectCh"
+						},{
+							"mode": -2,
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "1030df25-2678-4e42-954c-7637a4f744da",
+							"key": "CurrentPeqBand"
+						},{
+							"sendID": -10,
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "852d839a-50cf-4300-b19e-3164ff902b94",
+							"key": "sendsOnFader"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Arrow left",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "35a89645-3767-4656-82c5-f468346ffb2a",
+				"valueSource": 1,
+				"paramA": 98,
+				"paramB": -1
+			},{
+				"uid": "arr-r-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"mode": 3,
+							"src": 0,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "18d68916-389e-4509-a112-abd288dd5eb0",
+							"key": "selectCh"
+						},{
+							"mode": -1,
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "3de42840-4d6d-4b83-a667-aa9883522db5",
+							"key": "CurrentPeqBand"
+						},{
+							"sendID": -11,
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "09875f18-be49-43c2-a816-fba4facc5e5f",
+							"key": "sendsOnFader"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Arrow right",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "910bc1b9-9d6e-49d5-9fa8-d4ba0636dcaa",
+				"valueSource": 1,
+				"paramA": 99,
+				"paramB": -1
+			},{
+				"uid": "zoom-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": {
+							"actionIndex": 1,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Fader-9",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "2b5cc317-65fa-4f56-bfa2-69e333737c9c",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						}
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Zoom",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "444a2d3c-7373-4911-a7e9-221a5a0aa579",
+				"valueSource": 1,
+				"paramA": 100,
+				"paramB": -1
+			},{
+				"uid": "scrub-btn",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Scrub",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "610b6f13-6786-4fc9-9d9d-0a4ba2ce2d27",
+				"valueSource": 1,
+				"paramA": 101,
+				"paramB": -1
+			},{
+				"faderMode": 0,
+				"uid": "fdr-8",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "mix.lvl",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": false,
+							"chSrc": 1,
+							"invertOutput": false,
+							"uuid": "e7e69967-0a8f-4f0f-ad5f-2130bc5f464f",
+							"key": "busMasterCh"
+						},{
+							"path": "monitor.ch.0.lvl",
+							"enable": false,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "a0635902-2ef1-48fb-b1df-6473b6df6e0b",
+							"key": "consoleParam"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "Fader-9",
+				"channel": 8,
+				"outputMode": 0,
+				"eventType": 3,
+				"type": -1,
+				"uuid": "796dc3e7-4aec-42e7-aee9-79d36132be1b",
+				"valueSource": 0,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-0",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-1",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "9fbdb912-ecf0-4da0-8d97-46a55752bd3a",
+				"valueSource": 1,
+				"paramA": 104,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-1",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-2",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "06857ab6-7e63-4e2b-b604-651f9e3decd4",
+				"valueSource": 1,
+				"paramA": 105,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-2",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-3",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "5a9d65c8-d984-4120-96be-a095f6da9198",
+				"valueSource": 1,
+				"paramA": 106,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-3",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-4",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "bdcc16d1-bbb3-429a-bd66-2a9f53b76d60",
+				"valueSource": 1,
+				"paramA": 107,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-4",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-5",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "d0209268-747f-463d-8b17-fad11e116408",
+				"valueSource": 1,
+				"paramA": 108,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-5",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-6",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "370bd78a-a54b-4b66-b927-1d390f233257",
+				"valueSource": 1,
+				"paramA": 109,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-6",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-7",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "b5be7551-0737-4690-b077-d37bdeac9c18",
+				"valueSource": 1,
+				"paramA": 110,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-7",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-8",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "b0d089d2-9e10-4a5a-8281-a6bf73e33d0d",
+				"valueSource": 1,
+				"paramA": 111,
+				"paramB": -1
+			},{
+				"uid": "fdr-touch-8",
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": []
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "Fader Touch-9",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": 4,
+				"type": -1,
+				"uuid": "e953512d-067e-458a-bdeb-eed7a26f3837",
+				"valueSource": 1,
+				"paramA": 112,
+				"paramB": -1
+			},{
+				"uid": "seg-tc",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"sec": true,
+							"dateFormat": "off",
+							"enable": true,
+							"timeFormat": "t24",
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "9c14b283-990b-4c49-8f0b-773c55829d56",
+							"key": "device"
+						}
+					},
+					"key": "main"
+				},
+				"name": "7-Segment Time",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[value]",
+				"type": -1,
+				"uuid": "8fa637d5-a4f5-49e0-bde2-7fca2726649d",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "seg-as",
+				"actionSlots": {
+					"actions": {
+						"actions": {
+							"enable": true,
+							"midiDeviceUid": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+							"boolMode": 0,
+							"textMode": 2,
+							"invertOutput": false,
+							"uuid": "f58e5d0c-3fc6-4905-b610-43847261cb45",
+							"key": "midiLabelRef",
+							"controllerUid": "f23865bf-f60b-4569-84a3-4f7f09aeefae"
+						}
+					},
+					"key": "main"
+				},
+				"name": "7-Segment Assign",
+				"channel": 0,
+				"outputMode": 0,
+				"eventType": -1,
+				"label": "[value]",
+				"type": -1,
+				"uuid": "98f83efd-d453-4155-83dd-fde3999aecbf",
+				"valueSource": 1,
+				"paramA": 0,
+				"paramB": 0
+			},{
+				"uid": "lcd-colors",
+				"actionSlots": {
+					"actions": {
+						"actions": [{
+							"path": "cfg.color",
+							"offset": 0,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "e1c934cf-bf88-4fcf-b011-6c60ed8c87c8",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 1,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "4f640b44-e538-4ef8-a6fe-61976126afa6",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 2,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "807d284d-b414-4bf0-aa13-5ccc6e8b8ca5",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 3,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "07e56455-5f35-45f5-a64f-50cbf6646e92",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 4,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "b5b12361-3c63-47f1-aa49-5beff77041b3",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 5,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "0b4d3a18-cf69-47e8-bb94-e8ef4a66a56b",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 6,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "42753e28-2b34-46cf-a1e4-60b4e74f1d7b",
+							"key": "currentLayer"
+						},{
+							"path": "cfg.color",
+							"offset": 7,
+							"enable": true,
+							"boolMode": 0,
+							"offset2": 0,
+							"SoF": true,
+							"chSrc": 2,
+							"invertOutput": false,
+							"uuid": "fc48bf7f-09c6-43ef-a743-e90141548819",
+							"key": "currentLayer"
+						}]
+					},
+					"key": "main"
+				},
+				"name": "LCD Colors",
+				"channel": -1,
+				"outputMode": 0,
+				"eventType": 0,
+				"type": -1,
+				"uuid": "3c6011d5-8fa7-48b7-80bd-96803174b1f5",
+				"valueSource": 1,
+				"paramA": -1,
+				"paramB": -1
+			},{
+				"outputValue": 127,
+				"actionSlots": [{
+					"actions": {
+						"actions": [{
+							"appLink": false,
+							"param": 0,
+							"enable": true,
+							"boolMode": 1,
+							"params": {
+								"id": "home"
+							},
+							"invertOutput": false,
+							"uuid": "a12a5c3b-9ae3-441f-8ad4-d25a9f0a27a5",
+							"key": "openView",
+							"paramB": 0
+						},{
+							"actionIndex": 0,
+							"enable": true,
+							"selectMode": 0,
+							"controllerName": "Arrow",
+							"boolMode": 1,
+							"invertOutput": false,
+							"uuid": "22ca1b7b-f96c-4d67-8f71-1bad16a4986f",
+							"deviceName": "",
+							"key": "actionLayerChange"
+						},{
+							"sendID": -1,
+							"enable": true,
+							"boolMode": 0,
+							"invertOutput": false,
+							"uuid": "507114b5-3715-4d6d-bf3e-8f01994c0ed7",
+							"key": "sendsOnFader"
+						}]
+					},
+					"key": "touch"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "click"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "longClick"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentary"
+				},{
+					"actions": {
+						"actions": []
+					},
+					"key": "momentaryInv"
+				}],
+				"name": "EDIT-2",
+				"channel": 0,
+				"outputMode": 2,
+				"eventType": 4,
+				"type": 2,
+				"uuid": "1f11419b-34d5-483d-8032-3b8520700af9",
+				"valueSource": 1,
+				"paramA": 51,
+				"paramB": 0
+			}]
+		},
+		"id": "d3ee6f08-3373-4c74-9215-bee3384cceff",
+		"inputPortSerialNr": "XTouch [hw:3,0,0]-ALSA (http://www.alsa-project.org)-6.16.1-zen1-1-zen-0"
+	}
+}
